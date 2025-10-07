@@ -64,7 +64,7 @@ from tryRAG.framework import RAGFramework
 cfg = {
     "lm_model_name": "google/gemma-3-4b-it",
     "emb_model_name": "all-MiniLM-L6-v2",
-    "mode": "hybrid", #@ "hybrid" / "sparse" / "hybrid"
+    "mode": "hybrid", #@ "dense" / "sparse" / "hybrid"
     "chunk_level": "paragraph", #@ "web_page" / "paragraph" / "sentence"
     "more_info": True, #@ True / False
     "doc_path": "path/to/data.jsonl", 

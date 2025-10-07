@@ -221,7 +221,7 @@ class RAGFramework:
 
         inputs = {
             k: (
-                v.to(self.model.device, dtype=torch.bfloat16)
+                v.to(self.model.device, dtype=self.model.dtype)
                 if v.dtype.is_floating_point else v.to(self.model.device)
             )
             for k, v in inputs.items()
@@ -230,6 +230,7 @@ class RAGFramework:
         input_len = inputs["input_ids"].shape[-1]
 
         max_len = int(self.model.config.text_config.max_position_embeddings)
+        # print('--->', input_len, '/', max_len)
         if input_len > max_len:
             raise ValueError(
                 f"Input length {input_len} exceeds maximum allowed length of {max_len} tokens."

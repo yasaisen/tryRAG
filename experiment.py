@@ -99,16 +99,16 @@ if __name__ == "__main__":
         os.makedirs(SAVE_PATH)
     setting_list = []
     setting_list += [
-        {
-            'exp_name': 'CwMdT02DfUfPf', 
-            'dataset_type': 'factoidQA', #@ "factoidQA" / "optionalQA"
-            'top_k': 1, 
-            'use_upper_text': False, 
-            'use_pre_answer': False, 
-            "mode": "dense", #@ "dense" / "sparse" / "hybrid"
-            "chunk_level": "web_page", #@ "web_page" / "paragraph" / "sentence"
-            "more_info": False, 
-        },
+        # {
+        #     'exp_name': 'CwMdT02DfUfPf', 
+        #     'dataset_type': 'factoidQA', #@ "factoidQA" / "optionalQA"
+        #     'top_k': 1, 
+        #     'use_upper_text': False, 
+        #     'use_pre_answer': False, 
+        #     "mode": "dense", #@ "dense" / "sparse" / "hybrid"
+        #     "chunk_level": "web_page", #@ "web_page" / "paragraph" / "sentence"
+        #     "more_info": False, 
+        # },
         {
             'exp_name': 'CwMsT02DfUfPf', 
             'dataset_type': 'factoidQA', #@ "factoidQA" / "optionalQA"
